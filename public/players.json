@@ -1,0 +1,122 @@
+[
+  {
+    "player-image": "https://i.ibb.co.com/WNvvRnXf/sakib-al-hasan.jpg",
+    "player-name": "Shakib Al Hasan",
+    "player-country": "Bangladesh",
+    "playing-role": "All-rounder",
+    "rating": 9.5,
+    "batting-style": "Left-handed",
+    "bowling-style": "Left-arm orthodox",
+    "price": 4000000000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/wFQ4znDQ/tamim-iqbal.jpg",
+    "player-name": "Tamim Iqbal",
+    "player-country": "Bangladesh",
+    "playing-role": "Batsman",
+    "rating": 9.2,
+    "batting-style": "Left-handed",
+    "bowling-style": "None",
+    "price": 8000000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/7Nk168xS/mushfiq.jpg",
+    "player-name": "Mushfiqur Rahim",
+    "player-country": "Bangladesh",
+    "playing-role": "Wicket-keeper Batsman",
+    "rating": 9.0,
+    "batting-style": "Right-handed",
+    "bowling-style": "None",
+    "price": 8000000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/hxc7Px7h/mahmudullah.jpg",
+    "player-name": "Mahmudullah Riyad",
+    "player-country": "Bangladesh",
+    "playing-role": "All-rounder",
+    "rating": 8.7,
+    "batting-style": "Right-handed",
+    "bowling-style": "Right-arm off spin",
+    "price": 8000000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/qMhtVQtj/mustafiz.webp",
+    "player-name": "Mustafizur Rahman",
+    "player-country": "Bangladesh",
+    "playing-role": "Bowler",
+    "rating": 8.8,
+    "batting-style": "Left-handed",
+    "bowling-style": "Left-arm fast-medium",
+    "price": 8000000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/SXHzvHwx/liton-das.jpg",
+    "player-name": "Liton Das",
+    "player-country": "Bangladesh",
+    "playing-role": "Batsman / Wicket-keeper",
+    "rating": 8.3,
+    "batting-style": "Right-handed",
+    "bowling-style": "None",
+    "price": 7000000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/CSPLwVX/kyle-mayers.jpg",
+    "player-name": "Kyle Mayers",
+    "player-country": "West Indies",
+    "playing-role": "Batsman / All-rounder",
+    "rating": 8.9,
+    "batting-style": "Right-handed",
+    "bowling-style": "Right-arm medium",
+    "price": 9000000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/xT5byKK/paul-stirling.jpg",
+    "player-name": "Paul Stirling",
+    "player-country": "Ireland",
+    "playing-role": "Batsman / All-rounder",
+    "rating": 8.6,
+    "batting-style": "Right-handed",
+    "bowling-style": "Right-arm medium",
+    "price": 8500000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/qY6nwygW/rishad.jpg",
+    "player-name": "Rishad Hossain",
+    "player-country": "Bangladesh",
+    "playing-role": "Bowler",
+    "rating": 8.1,
+    "batting-style": "Right-handed",
+    "bowling-style": "Right-arm leg spin",
+    "price": 5000000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/N6s583FC/haider-ali.jpg",
+    "player-name": "Haider Ali",
+    "player-country": "Pakistan",
+    "playing-role": "Batsman",
+    "rating": 8.4,
+    "batting-style": "Right-handed",
+    "bowling-style": "None",
+    "price": 8000000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/xtJqn4gx/thishara-perera.jpg",
+    "player-name": "Thisara Perera",
+    "player-country": "Sri Lanka",
+    "playing-role": "All-rounder",
+    "rating": 8.2,
+    "batting-style": "Right-handed",
+    "bowling-style": "Right-arm medium-fast",
+    "price": 7500000
+  },
+  {
+    "player-image": "https://i.ibb.co.com/7N8CQ9TY/nabil-samad.png",
+    "player-name": "Nabil Samad",
+    "player-country": "Bangladesh",
+    "playing-role": "Bowler",
+    "rating": 7.8,
+    "batting-style": "Left-handed",
+    "bowling-style": "Left-arm orthodox",
+    "price": 4500000
+  }
+]
