@@ -9,12 +9,13 @@ const fetchPlayers = async () => {
   return (await res).json();
 };
 
+const playersPromise = fetchPlayers();
 function App() {
   const [toggle, setToggle] = useState(true);
-  const playersPromise = fetchPlayers();
+  const [availableBalance, setAvailableBalance] = useState(60000000);
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar availableBalance={availableBalance}></Navbar>
 
       <div className="max-w-[1200px] mx-auto flex justify-between items-center">
         <h1 className="font-bold text-2xl">Available Players</h1>
@@ -45,7 +46,11 @@ function App() {
             <span className="loading loading-spinner loading-xl"></span>
           }
         >
-          <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
+          <AvailablePlayers
+            availableBalance={availableBalance}
+            setAvailableBalance={setAvailableBalance}
+            playersPromise={playersPromise}
+          ></AvailablePlayers>
         </Suspense>
       ) : (
         <SelectedPlayers></SelectedPlayers>
