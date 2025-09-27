@@ -13,18 +13,33 @@ const playersPromise = fetchPlayers();
 function App() {
   const [toggle, setToggle] = useState(true);
   const [availableBalance, setAvailableBalance] = useState(60000000);
+  const [purchasedPlayers, setPurchasedPlayers] = useState([]);
+
+  const removePlayer = (p) => {
+    const filteredData = purchasedPlayers.filter(
+      (ply) => ply.player_name !== p.player_name
+    );
+    console.log(filteredData);
+    setPurchasedPlayers(filteredData);
+    setAvailableBalance(availableBalance + p.price);
+  };
+
   return (
     <>
       <Navbar availableBalance={availableBalance}></Navbar>
 
       <div className="max-w-[1200px] mx-auto flex justify-between items-center">
-        <h1 className="font-bold text-2xl">Available Players</h1>
+        <h1 className="font-bold text-2xl">
+          {toggle === true
+            ? "Available Players"
+            : `Selected Player (${purchasedPlayers.length}/6)`}
+        </h1>
 
         <div className="font-bold">
           <button
             onClick={() => setToggle(true)}
             className={`py-3 px-4 border-1 border-r-0 border-gray-300 rounded-l-2xl ${
-              toggle === true ? "bg-lime-200" : ""
+              toggle === true ? "bg-lime-400" : ""
             }`}
           >
             Available
@@ -35,7 +50,7 @@ function App() {
               toggle === false ? "bg-lime-200" : ""
             }`}
           >
-            Selected <span>(0)</span>
+            Selected <span>({purchasedPlayers.length})</span>
           </button>
         </div>
       </div>
@@ -47,13 +62,18 @@ function App() {
           }
         >
           <AvailablePlayers
+            purchasedPlayers={purchasedPlayers}
+            setPurchasedPlayers={setPurchasedPlayers}
             availableBalance={availableBalance}
             setAvailableBalance={setAvailableBalance}
             playersPromise={playersPromise}
           ></AvailablePlayers>
         </Suspense>
       ) : (
-        <SelectedPlayers></SelectedPlayers>
+        <SelectedPlayers
+          removePlayer={removePlayer}
+          purchasedPlayers={purchasedPlayers}
+        ></SelectedPlayers>
       )}
     </>
   );
